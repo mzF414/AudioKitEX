@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
     'DEFINES_MODULE' => 'YES'
   }
   
-  spec.source_files = 'Sources/CAudioKitEX/**/*.{c,h,cpp,mm,m}'
+  spec.source_files = 'Sources/CAudioKitEX/**/*.{c,h,hpp,cpp,mm,m}'
   spec.public_header_files = 'Sources/CAudioKitEX/**/*.{h}'
 #   spec.compiler_flags = [
 #     '-fno-omit-frame-pointer',
