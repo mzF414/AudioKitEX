@@ -27,4 +27,12 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Sources/**/*.{c,h,cpp,swift}'
   spec.public_header_files = 'Sources/**/*.{h}'
   spec.swift_version = '5.0'
+  spec.compiler_flags = [
+    '-fno-omit-frame-pointer',
+    '-fexceptions',
+    '-Wall',
+    '-Werror',
+    '-std=c++1y',
+    '-fPIC'
+  ]
 end
