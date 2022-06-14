@@ -1,7 +1,7 @@
 // Copyright AudioKit. All Rights Reserved. Revision History at http://github.com/AudioKit/AudioKit/
 
 #include "DSPBase.h"
-#import "Internals/RingBuffer.h"
+#import "RingBuffer.hpp"
 #import "CAudioKit.h"
 
 using AudioKit::RingBuffer;
