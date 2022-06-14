@@ -27,13 +27,13 @@ Pod::Spec.new do |spec|
   
   spec.source_files = 'Sources/CAudioKitEX/**/*.{c,h,cpp,mm,m}'
   spec.public_header_files = 'Sources/CAudioKitEX/**/*.{h}'
-  spec.compiler_flags = [
-    '-fno-omit-frame-pointer',
-    '-fexceptions',
-    '-Wall',
-    '-Werror',
-    '-std=c++1y',
-    '-fPIC'
-  ]
+#   spec.compiler_flags = [
+#     '-fno-omit-frame-pointer',
+#     '-fexceptions',
+#     '-Wall',
+#     '-Werror',
+#     '-std=c++1y',
+#     '-fPIC'
+#   ]
 
 end
