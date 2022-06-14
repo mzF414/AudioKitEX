@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   }
   spec.platforms = { :ios => "11.0", :osx => "10.13", :tvos => "11.0" }
   spec.module_name = 'CAudioKitEX'
-  spec.requires_arc = false
+  spec.requires_arc = true
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES'
   }
