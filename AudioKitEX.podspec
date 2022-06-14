@@ -19,16 +19,20 @@ Pod::Spec.new do |spec|
     :tag => spec.version.to_s,
   }
   spec.platforms = { :ios => "11.0", :osx => "10.13", :tvos => "11.0" }
-  spec.module_name = 'AudioKitEX'
-  spec.requires_arc = false
-  spec.pod_target_xcconfig = {
-    'DEFINES_MODULE' => 'YES'
-  }
-  spec.source_files = 'Sources/**/*.{swift}'
-  spec.swift_version = '5.0'
+  
+  spec.default_subspec = 'AudioKitEX'
+  
+  spec.subspec 'AudioKitEX' do |subspec|
+    subspec.requires_arc = false
+    subspec.pod_target_xcconfig = {
+      'DEFINES_MODULE' => 'YES'
+    }
+    spec.source_files = 'Sources/**/*.{swift}'
+    spec.swift_version = '5.0'
+    spec.dependency 'AudioKitEX/CAudioKitEX'
+  end
   
   spec.subspec 'CAudioKitEX' do |subspec|
-#     subspec.module_name = 'CAudioKitEX'
     subspec.requires_arc = false
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
