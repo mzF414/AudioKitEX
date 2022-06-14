@@ -26,23 +26,6 @@ Pod::Spec.new do |spec|
     'DEFINES_MODULE' => 'YES'
   }
   
-  spec.default_subspec = 'Core'
-  
-  spec.subspec 'Core' do |subspec|
-    subspec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
-    subspec.dependency 'AudioKitEX/CAudioKitEX'
-  end
-  
-  spec.subspec 'CAudioKitEX' do |subspec|
-    subspec.source_files = 'Sources/CAudioKitEX/**/*.{c,h,cpp,mm,m}'
-    subspec.public_header_files = 'Sources/CAudioKitEX/**/*.{h}'
-    subspec.compiler_flags = [
-      '-fno-omit-frame-pointer',
-      '-fexceptions',
-      '-Wall',
-      '-Werror',
-      '-std=c++1y',
-      '-fPIC'
-    ]
-  end
+  spec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
+  spec.dependency 'CAudioKitEX'
 end
