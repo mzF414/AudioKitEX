@@ -21,7 +21,6 @@ Pod::Spec.new do |spec|
   spec.platforms = { :ios => "11.0", :osx => "10.13", :tvos => "11.0" }
   spec.module_name = 'AudioKitEX'
   spec.swift_version = '5.0'
-  spec.requires_arc = false
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES'
   }
