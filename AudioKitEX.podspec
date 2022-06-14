@@ -27,9 +27,9 @@ Pod::Spec.new do |spec|
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
     }
-    spec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
-    spec.swift_version = '5.0'
-    spec.dependency 'AudioKitEX/CAudioKitEX'
+    subspec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
+    subspec.swift_version = '5.0'
+    subspec.dependency 'AudioKitEX/CAudioKitEX'
   end
   
   spec.subspec 'CAudioKitEX' do |subspec|
