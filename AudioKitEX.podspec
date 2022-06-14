@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
     }
-    spec.source_files = 'Sources/**/*.{swift}'
+    spec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
     spec.swift_version = '5.0'
     spec.dependency 'AudioKitEX/CAudioKitEX'
   end
@@ -37,8 +37,8 @@ Pod::Spec.new do |spec|
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
     }
-    subspec.source_files = 'Sources/AudioKitEX/**/*.{c,h,cpp,mm,m}'
-    subspec.public_header_files = 'Sources/AudioKitEX/**/*.{h}'
+    subspec.source_files = 'Sources/CAudioKitEX/**/*.{c,h,cpp,mm,m}'
+    subspec.public_header_files = 'Sources/CAudioKitEX/**/*.{h}'
     subspec.compiler_flags = [
       '-fno-omit-frame-pointer',
       '-fexceptions',
