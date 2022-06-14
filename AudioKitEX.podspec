@@ -26,5 +26,6 @@ Pod::Spec.new do |spec|
   }
   
   spec.source_files = 'Sources/AudioKitEX/**/*.{swift}'
+  spec.dependency 'AudioKit'
   spec.dependency 'CAudioKitEX'
 end
