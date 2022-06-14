@@ -20,9 +20,9 @@ Pod::Spec.new do |spec|
   }
   spec.platforms = { :ios => "11.0", :osx => "10.13", :tvos => "11.0" }
   
-  spec.default_subspec = 'AudioKitEX'
+  spec.default_subspec = 'Core'
   
-  spec.subspec 'AudioKitEX' do |subspec|
+  spec.subspec 'Core' do |subspec|
     subspec.requires_arc = false
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
