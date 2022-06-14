@@ -4,7 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 Pod::Spec.new do |spec|
-  spec.name = 'AudioKitEX'
+  spec.name = 'CAudioKitEX'
   spec.version = '5.4.0'
   spec.license =  { :type => 'MIT', :file => "LICENSE" }
   spec.homepage = 'https://audiokit.io/'
