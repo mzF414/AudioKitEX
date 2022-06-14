@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   
   spec.subspec 'CAudioKitEX' do |subspec|
-    subspec.module_name = 'CAudioKitEX'
+#     subspec.module_name = 'CAudioKitEX'
     subspec.requires_arc = false
     subspec.pod_target_xcconfig = {
       'DEFINES_MODULE' => 'YES'
