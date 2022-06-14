@@ -24,9 +24,6 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES'
   }
-  spec.source_files = 'Sources/**/*.{c,h,cpp,swift}'
-  spec.public_header_files = 'Sources/**/*.{h}'
-  spec.swift_version = '5.0'
   spec.compiler_flags = [
     '-fno-omit-frame-pointer',
     '-fexceptions',
@@ -35,4 +32,7 @@ Pod::Spec.new do |spec|
     '-std=c++1y',
     '-fPIC'
   ]
+  spec.source_files = 'Sources/**/*.{c,h,cpp,mm,m,swift}'
+  spec.public_header_files = 'Sources/**/*.{h}'
+  spec.swift_version = '5.0'
 end
