@@ -24,15 +24,24 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES'
   }
-  spec.compiler_flags = [
-    '-fno-omit-frame-pointer',
-    '-fexceptions',
-    '-Wall',
-    '-Werror',
-    '-std=c++1y',
-    '-fPIC'
-  ]
-  spec.source_files = 'Sources/**/*.{c,h,cpp,mm,m,swift}'
-  spec.public_header_files = 'Sources/**/*.{h}'
+  spec.source_files = 'Sources/**/*.{swift}'
   spec.swift_version = '5.0'
+  
+  spec.subspec 'CAudioKitEX' do |subspec|
+    subspec.module_name = 'CAudioKitEX'
+    subspec.requires_arc = false
+    subspec.pod_target_xcconfig = {
+      'DEFINES_MODULE' => 'YES'
+    }
+    subspec.source_files = 'Sources/AudioKitEX/**/*.{c,h,cpp,mm,m}'
+    subspec.public_header_files = 'Sources/AudioKitEX/**/*.{h}'
+    subspec.compiler_flags = [
+      '-fno-omit-frame-pointer',
+      '-fexceptions',
+      '-Wall',
+      '-Werror',
+      '-std=c++1y',
+      '-fPIC'
+    ]
+  end
 end
