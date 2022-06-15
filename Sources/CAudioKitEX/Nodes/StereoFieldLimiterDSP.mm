@@ -46,3 +46,8 @@ DSPRef akStereoFieldLimiterCreateDSP() {
 }
 AK_REGISTER_DSP(StereoFieldLimiterDSP, "sflm")
 AK_REGISTER_PARAMETER(StereoFieldLimiterParameterAmount)
+
+@interface StereoFieldLimiterDSPPlaceHoldClass : NSObject
+@end
+@implementation StereoFieldLimiterDSPPlaceHoldClass
+@end
