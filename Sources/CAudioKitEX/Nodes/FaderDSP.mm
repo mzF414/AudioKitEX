@@ -97,3 +97,8 @@ AK_REGISTER_PARAMETER(FaderParameterLeftGain)
 AK_REGISTER_PARAMETER(FaderParameterRightGain)
 AK_REGISTER_PARAMETER(FaderParameterFlipStereo)
 AK_REGISTER_PARAMETER(FaderParameterMixToMono)
+
+@interface FaderDSPPlaceHoldClass : NSObject
+@end
+@implementation FaderDSPPlaceHoldClass
+@end
